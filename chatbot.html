@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education App Bot</title>
+
+  <!-- Dialogflow Messenger Script -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <style>
+    /* Make the page completely transparent/blank */
+    body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+
+    /* Floating chatbot in bottom-right corner */
+    df-messenger {
+      position: fixed !important;
+      bottom: 20px !important;
+      right: 20px !important;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Dialogflow Messenger -->
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Education_App_Bot"
+    agent-id="4aaa36e0-4df6-4743-aa90-651e33adc562"
+    language-code="en"
+  ></df-messenger>
+
+</body>
+</html>
